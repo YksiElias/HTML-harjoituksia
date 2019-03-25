@@ -2,7 +2,26 @@
 {
     background-color: lightgoldenrodyellow;
 }
-h4{
+nav {
     float: right;
-    margin-right: 10px;
+}
+#paavalikko {
+    text-decoration: none;
+}
+#koira-juoksee {
+    margin-left: auto;
+    margin-right: auto;
+}
+#some-logo{
+    margin: 2px;
+}
+#laatikon-otsikko{
+    color: floralwhite;
+}
+#laatikon-teksti{
+    color: floralwhite;
+}
+#infolaatikko{
+    width: 250px;
+    border-radius: 7px;
 }

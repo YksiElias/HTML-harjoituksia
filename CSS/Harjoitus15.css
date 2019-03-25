@@ -1,0 +1,29 @@
+﻿body
+{
+}
+
+table{
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: darkgrey;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+#vasen{
+    text-align: left;
+}
+
+#oikea{
+    text-align: right;
+    border: 1px solid black;
+}
+
+td {
+    text-align: right;
+    border: 1px solid black;
+}
