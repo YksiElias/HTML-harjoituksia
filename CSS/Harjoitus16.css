@@ -1,0 +1,54 @@
+﻿
+#punPieni{
+    color: red;
+    font-size: 12px;
+}
+#vihrPieni {
+    color: green;
+    font-size: 16px;
+}
+#vihrIso {
+    color: green;
+    font-size: 25px;
+}
+#ruskeaIso {
+    color: brown;
+    font-size: 25px;
+}
+#ruskeaKeskikok {
+    color: brown;
+    font-size: 20px;
+}
+#syaaniKeskikok {
+    color: cyan;
+    font-size: 18px;
+}
+#ruskeaPieni {
+    color: brown;
+    font-size: 13px;
+}
+#pieni {
+    font-size: 9px;
+}
+h1{
+    font-size: 35px;
+    color: green;
+}
+h2 {
+    font-family: 'Germania One', cursive;
+}
+#pacifico {
+    font-family: 'Pacifico', cursive;
+}
+#patrick {
+    font-family: 'Patrick Hand', cursive;
+}
+#chau {
+    font-family: 'Chau Philomene One', sans-serif;
+}
+#indie {
+    font-family: 'Indie Flower', cursive;
+}
+#fondamento {
+    font-family: 'Fondamento', cursive;
+}
