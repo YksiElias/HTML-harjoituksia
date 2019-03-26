@@ -1,0 +1,31 @@
+﻿p, ul {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    line-height: 19px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#isoilla{
+    text-transform: uppercase;
+}
