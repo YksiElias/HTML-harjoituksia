@@ -1,0 +1,13 @@
+﻿table{
+    width: 80%;
+    border-collapse: collapse;
+}
+td{
+    padding: 4px;
+}
+.pros30{
+    width: 30%;
+}
+.pros40{
+    width: 40%;
+}

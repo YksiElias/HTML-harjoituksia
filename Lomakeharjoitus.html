@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Lomakeharjoitus</title>
+</head>
+<body>
+    <form>
+        <p>PALAUTELOMAKE</p>
+        <label for="nimi">Nimi:</label><br />
+        <input type="text" name="nimi" id="nimi" /><br />
+        <label for="sahkoposti">Sähköposti:</label><br />
+        <input type="email" name="email" id="sahkoposti" /><br />
+        <label for="palautteen laji">Palautteen laji:</label><br />
+        <input type="radio" name="palautteen laji" value="Risuja" id="palautteen laji" />Risuja<input type="radio" name="palautteen laji" value="Ruusuja" id="palautteen laji" />Ruusuja<br />
+        <label for="palaute">Palaute:</label><br />
+        <textarea type="text" name="palaute" id="palaute" cols="45" rows="5"></textarea><br />
+        <input type="submit" name="laheta" id="laheta" value="Lähetä palaute" />
+    </form>
+
+</body>
+</html>
