@@ -16,39 +16,62 @@
         <td colspan="2"><h1>Tiedon keruu!</h1></td></tr>
         <tr>
             <td><h3>Nimi:</h3></td>
-            <td>Kirjoita nimesi -kenttä</td>
+            <td><input type="text" name="Nimi" value="Kirjoita nimesi"/></td>
         </tr>
     <tr>
         <td><h3>Sähköposti:</h3></td>
-        <td>Kirjoita sähköpostisi -kenttä</td>
+        <td><input type="email" value="Kirjoita sähköpostisi" /></td>
     </tr>
     <tr>
         <td><h3>Sijainti:</h3></td>
-        <td>Alasvetovalikko, jossa ensimmäisenä Helsinki</td>
+        <td>
+        <select name="sijainti">
+            <option value="helsinki">Helsinki</option>
+            <option value="espoo">Espoo</option>
+            <option value="vantaa">Vantaa</option>
+            <option value="kauniainen">Kauniainen</option>
+        </select>
+        </td>
     </tr>
     <tr>
         <td><h3>Sukupuoli:</h3></td>
-        <td>Radio buttonit: Mies, Nainen, Joku muu</td>
+        <td>
+        <input type="radio" name="sukupuoli" value="mies" checked /> Mies<br />
+        <input type="radio" name="sukupuoli" value="nainen" /> Nainen<br />
+        <input type="radio" name="sukupuoli" value="muu" /> Joku muu
+        </td>
     </tr>
     <tr>
         <td><h3>Syntymättömyyspäivä:</h3></td>
-        <td>Kenttä: pp.kk.vvvv</td>
+        <td><input type="date" name="syntymapaiva" />
+        </td>
     </tr>
     <tr>
         <td><h3>Arvosana koulutukselle:</h3></td>
-        <td>Yksirivinen tekstikenttä</td>
+        <td><input type="text" />
+        </td>
     </tr>
     <tr>
         <td><h3>Tulen kouluun:</h3></td>
-        <td>Monivalintamahdollisuusvalintaruudut: Bussilla Ratikalla Kävellen Autolla, Metrolla Pyörällä Junalla Jollain muulla</td>
+        <td>
+            <input type="checkbox" name="matkustustapa" value="bussi" /> Bussilla &nbsp;&nbsp;
+            <input type="checkbox" name="matkustustapa" value="metro" /> Metrolla<br />
+            <input type="checkbox" name="matkustustapa" value="ratikka" /> Ratikalla &nbsp;
+            <input type="checkbox" name="matkustustapa" value="pyora" /> Pyörällä<br />
+            <input type="checkbox" name="matkustustapa" value="kävely" /> Kävellen &nbsp;
+            <input type="checkbox" name="matkustustapa" value="juna" /> Junalla<br />
+            <input type="checkbox" name="matkustustapa" value="auto" /> Autolla &nbsp; &nbsp;
+            <input type="checkbox" name="matkustustapa" value="joku muu" /> Jollain muulla
+        </td>
     </tr>
     <tr>
         <td><h3>Kommentit:</h3></td>
-        <td>Textarea</td>
+        <td><textarea name="kommentti" rows="15" cols="25"></textarea>
+        </td>
     </tr>
     <tr>
         <td></td>
-        <td>Lähetänappula tähän</td>
+        <td><input type="submit" value="Lähetä" /></td>
     </tr>
 </table>
     </form>
