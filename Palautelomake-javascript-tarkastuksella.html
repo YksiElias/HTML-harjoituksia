@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<!-- KESKEN KESKEN -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Palautelomake javascript-tarkastuksella</title>
+</head>
+<script src=""></script>
+<body>
+    <h1>
+        Palautelomake
+    </h1>
+
+    <!-- PALAUTELOMAKE hyödyntäen kaksisarakkeista Tablea -->
+
+    <form>
+        <table>
+            <tr>
+                <td>Etunimi:</td>
+                <td><input type="text" name="etunimi" /></td>
+            </tr>
+            <tr>
+                <td>Sukunimi:</td>
+                <td><input type="text" name="sukunimi" /></td>
+            </tr>
+            <tr>
+                <td>Sähköposti:</td>
+                <td><input type="email" name="sahkoposti" /></td>
+            </tr>
+            <tr>
+                <td>Puhelin:</td>
+                <td><input type="tel" name="puhelin" /></td>
+            </tr>
+            <tr>
+                <td>Osoite:</td>
+                <td><textarea name="osoite" rows="6" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td>Maa:</td>
+                <td>
+                    <select name="maa">
+                        <option value="000">Choose yours</option>
+                        <option value="islanti">Islanti</option>
+                        <option value="iso-britannia">Iso-Britannia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Lähetä"/></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
