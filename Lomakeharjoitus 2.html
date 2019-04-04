@@ -6,21 +6,53 @@
 <head>
     <meta charset="utf-8" />
     <title>Lomakeharjoitus</title>
-    <link rel="stylesheet" type="text/css" href="css/lomakeharjoitus2.css"
+    <link rel="stylesheet" type="text/css" href="css/lomakeharjoitus2.css" />
+          <script>
+    /* var puuttuvaNimi = "Nimikenttä ei voi olla tyhjä"; */
+    function validateForm() {
+        var arvosana = document.forms["lomakeharjoitus2"]["arvosana"].value;
+        var nimi = document.forms["lomakeharjoitus2"]["nimi"].value;
+        var email = document.forms["lomakeharjoitus2"]["email"].value;
+
+        if (arvosana == "") {
+            alert("Anna ensin arvosana");
+            arvosana.focus;
+            return false;
+        }
+        
+        if (nimi == "") {
+            alert("Anna ensin etu -ja sukunimi");
+            nimi.focus();
+            return false;
+        }
+        
+        if (nimi.value.length <= 5) {
+            alert("Anna ensin etu -ja sukunimi");
+            nimi.focus();
+            return false;
+        }
+
+        if (email.value == "") {
+            window.alert("Anna ensin sähköpostiosoite");
+            email.focus();
+            return false;
+        }
+    }
+</script>
 </head>
 <body>
 
-    <form>
+    <form name="lomakeharjoitus2" onsubmit="return validateForm()" method="post">
 <table id="table">
     <tr>
         <td colspan="2"><h1>Tiedon keruu!</h1></td></tr>
         <tr>
             <td><h3>Nimi:</h3></td>
-            <td><input type="text" name="Nimi" value="Kirjoita nimesi"/></td>
+            <td><input type="text" id="nimi" name="nimi" placeholder="Kirjoita nimesi"/></td>
         </tr>
     <tr>
         <td><h3>Sähköposti:</h3></td>
-        <td><input type="email" value="Kirjoita sähköpostisi" /></td>
+        <td><input type="email" id="email" name="email" placeholder="Kirjoita sähköpostisi" /></td>
     </tr>
     <tr>
         <td><h3>Sijainti:</h3></td>
@@ -36,9 +68,8 @@
     <tr>
         <td><h3>Sukupuoli:</h3></td>
         <td>
-        <input type="radio" name="sukupuoli" value="mies" checked /> Mies<br />
-        <input type="radio" name="sukupuoli" value="nainen" /> Nainen<br />
-        <input type="radio" name="sukupuoli" value="muu" /> Joku muu
+        <input type="radio" name="sukupuoli" value="mies" /> Mies<br />
+        <input type="radio" name="sukupuoli" value="nainen" /> Nainen
         </td>
     </tr>
     <tr>
@@ -48,7 +79,7 @@
     </tr>
     <tr>
         <td><h3>Arvosana koulutukselle:</h3></td>
-        <td><input type="text" />
+        <td><input id="arvosana" name="arvosana" type="text" />
         </td>
     </tr>
     <tr>
@@ -75,10 +106,6 @@
     </tr>
 </table>
     </form>
-
-    <script>
-        var puuttuvaNimi = "Nimikenttä ei voi olla tyhjä";
-    </script>
 
 </body>
 </html>
